@@ -53,27 +53,6 @@ public class Serie {
 		
 	}
 
-	public String listadoTemporadasPorNotaMedia() {
-		StringBuilder sb=new StringBuilder();
-		
-		for (Temporada temporada : temporadas) {
-			
-		}
-		
-		return sb.toString();
-	}
-	
-
-	public String listadoTemporadasPorNumeroDeCapitulos() {
-		StringBuilder sb=new StringBuilder();
-		
-		for (Temporada temporada : temporadas) {
-			
-		}
-		
-		return sb.toString();
-	}
-
 	public String getNombreSerie() {
 		return nombreSerie;
 	}
