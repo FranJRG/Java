@@ -104,18 +104,6 @@ public class Serie {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Serie other = (Serie) obj;
-		if (nombreSerie == null) {
-			if (other.nombreSerie != null)
-				return false;
-		} else if (!nombreSerie.equals(other.nombreSerie))
-			return false;
-		return true;
+		return this==obj||obj!=null && obj instanceof Serie && this.hashCode()==this.hashCode();
 	}	
 }
